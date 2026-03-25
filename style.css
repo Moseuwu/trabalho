@@ -1,0 +1,333 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+@font-face {
+    font-family: "Trench";
+    src: url("Trench/trench100.ttf") format("truetype");
+}
+
+body {
+    color: white;
+    background-color: #121212;
+    font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+}
+
+section {
+        padding: 60px 20px;
+}
+
+.container {
+      max-width: 1000px;
+      margin: 0 auto; 
+      display: flex; 
+      /*align-items: flex-end;*/
+    justify-content: center; /* centraliza horizontal */
+    align-items: center;     /* centraliza vertical */
+    min-height: 100vh;       /* ocupa altura toda da tela */
+}
+
+.container--coluna{
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+}
+
+
+button {
+background-color: #10e23e;
+    color: white; 
+    padding: 10px 30px;
+    border: 3px solid #36b311;
+    border-right-width: 5px; 
+    border-bottom-width: 5px;
+    border-radius: 15px;
+    cursor: pointer; 
+    font-weight: 700;
+    text-transform: uppercase;
+    text-shadow: 0 0 5px #343a40;
+    box-shadow: 0 0 1em 0.1em #10e23e;
+     background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(20px);
+}
+
+button:hover {
+    border: 5px solid #36b311;
+     background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: none;
+    
+}
+
+
+
+h2 {
+    font-size: 40px;
+    font-weight: 400; 
+}
+
+.realce {
+    color:#36b311
+}
+
+
+/* seção hero*/
+
+h1 {
+    font-family: "Trench", sans-serif;
+    font-size: 49px;
+    text-align: center;
+    line-height: 100%;
+}
+
+.secao--hero {
+    min-height: 100vh;
+}
+
+
+h1 .masterclass{
+    color: #10e23e;
+}
+ 
+h1 .programação{
+    font-size: 53px;
+}
+
+h1 .fullstack{
+    font-size: 78px;
+}
+
+.subtitulo {
+    font-family: "Comfortaa";
+     font-weight: 700;
+
+}
+
+.subtitulo, .data, button
+{
+    font-size: 23px;
+}
+
+h3, button {
+    font-size: 23px;
+}
+
+
+
+
+.hexagono--externo {
+    width: 50px;
+    height: auto;
+    aspect-ratio: 90 / 78;
+    filter: drop-shadow(0  0 2.5px #10e23e)
+}
+
+.hexagono--interno{
+    width: 92.5%;
+    height: 92.5%;
+    background-color: #050505;
+}
+
+.hexagono.img {
+    width: 50%;
+}
+
+.secao--hero {
+    background-image: url(https://images.pexels.com/photos/1089438/pexels-photo-1089438.jpeg);
+    background-position: 50%; /*posição do fundo, e 50% centraliza a imagem*/
+    background-size: cover; /*imagem de fundo cobre toda a área, sem deixar espaço vazio*/
+}
+
+
+.card {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    background-color: #050505;
+    box-shadow: 0 0 25px 5px #10e23e;
+    padding: 30px 40px; 
+    border-radius: 25px;
+    max-width: 50%;
+     gap: 25px;
+     font-size: 18px;
+     width: 420px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    
+}
+
+
+.subtitulo {
+    padding: 2px;
+    font-family: "Trench";
+}
+
+
+ul {
+    display: flex;
+    flex-direction: column;
+    gap: 7.5px;
+    list-style: none; 
+}
+
+li{
+    display: flex;
+    align-items: flex-start; 
+    gap: 7.5px;
+    font-family: "Trench", sans-serif;
+     font-weight: 700;
+ }
+
+li img{
+    margin-top: 2.5px;
+}
+
+.dia {
+    font-family: "Comfortaa";
+}
+.data{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0 0 5px 0 #10e23e;
+    border-radius: 100px;
+    padding: 5px 30px;
+}
+
+
+/* disclaimer inseção de responsabilidade */
+.secao--disclaimer {
+    background-color: #151515;
+    padding: 30px 20px;
+ }
+
+.disclaimer{
+    font-size: 15px;
+    color: #7C7F7F;
+    box-shadow: 0 15px 10px 0 rgb (0 0 0 / 50%);
+} 
+/*Passos*/
+
+.passos {
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.passo{
+    background-color: #1c1c1c;
+    padding: 20px 30px;
+    border-radius: 10px;
+    display: flex; 
+    gap: 30px;
+    align-items: center;
+}
+
+.passo__icone {
+    max-width: 53px;
+    background-color: #141213;
+    border-radius: 7.5px;
+    padding: 12.5px;
+    box-shadow: 0 0 7.5px 0px #10e23e;
+    border: 3px solid #262427;
+}
+
+.passo__cabecalho {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    min-width: 200px;
+
+}
+
+
+.passo__barra{
+    min-width: 4px;
+    background-color: #333; 
+    align-self: stretch;
+
+}
+
+/*Aprender*/
+
+.seccao--aprender{
+    background-color: #000618;
+}
+
+.temas{
+    align-self: stretch;
+    font-size: 18px;
+}
+
+.tema{
+    background-color: #050505;
+    border-radius: 10px;
+    box-shadow: 0 0 7.5px 0px #00a1ff;
+    padding: 20px;
+}
+
+
+/* disclaimer inseção de responsabilidade */
+.secao--disclaimer {
+    background-color: #151515;
+    padding: 30px 20px;  }
+
+.disclaimer{
+    font-size: 15px;
+    color: #7C7F7F;
+    box-shadow: 0 15px 10px 0 rgb (0 0 0 / 50%);
+} 
+/*Passos*/
+
+.passos {
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.passo{
+    background-color: #1c1c1c;
+    padding: 20px 30px;
+    border-radius: 10px;
+    display: flex; 
+    gap: 30px;
+    align-items: center;
+}
+
+.passo__icone {
+    max-width: 53px;
+    background-color: #141213;
+    border-radius: 7.5px;
+    padding: 12.5px;
+    box-shadow: 0 0 7.5px 0px #10e23e;
+    border: 3px solid #262427;
+}
+
+.passo__cabecalho {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    min-width: 200px;
+
+}
+
+
+.passo__barra{
+    min-width: 4px;
+    background-color: #333;
+    align-self: stretch; 
+}
